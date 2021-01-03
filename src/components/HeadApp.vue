@@ -39,7 +39,7 @@ export default {
   name: "HeadApp",
   data() {
     return {
-      mode: localStorage.getItem("mode"),
+      mode: localStorage.getItem("mode")?localStorage.getItem("mode"):0,
     };
   },
   methods: {
