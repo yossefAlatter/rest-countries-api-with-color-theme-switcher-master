@@ -80,6 +80,7 @@ export default {
         hideDetailPage(){
             $("#detail-page").fadeOut(200);
             $("#home-page").fadeIn(400);
+            $(':root').getNiceScroll().resize();
         },
         //== end ==//
     },
@@ -87,7 +88,8 @@ export default {
     watch:{
 
         countryDetail(){
-            this.mycountry = this.countryDetail
+            this.mycountry = this.countryDetail;
+            $(':root').getNiceScroll().resize();
         }
     },
 

@@ -72,6 +72,7 @@ export default {
         this.fetchData("country",this.selectedCountry);
         this.selectedCountry = "",
         this.filterRegion = "Filter by region"
+         $(':root').getNiceScroll().resize();
       }
     },
     //== end ==//
@@ -82,6 +83,7 @@ export default {
       this.fetchData("region",region);
       this.filterRegion = region;
       this.selectedCountry = ""
+       $(':root').getNiceScroll().resize();
     },
     //== end ==//
 
@@ -90,6 +92,7 @@ export default {
     filterAll(){
       this.fetchData();
       this.filterRegion = "All Regions";
+       $(':root').getNiceScroll().resize();
     }
     //== end ==//
   }

@@ -105,6 +105,7 @@ export default {
       $("#home-page").fadeOut(200);
       $("#detail-page").fadeIn(400);
       this.countryDetail = choosenCountry;
+       $(':root').getNiceScroll().resize();
     },
     //== end ==//
 
@@ -119,7 +120,9 @@ export default {
         $('.loader').html(`
         <div class="text-center error-message">There is no country having that name</div>
         `)  
+
       }
+       $(':root').getNiceScroll().resize();
     }
     //== end ==//
 
@@ -128,6 +131,11 @@ export default {
   mounted() {
     this.fetchData();
   },
+  watch:{
+    countries(){
+       $(':root').getNiceScroll().resize();
+    }
+  }
 };
 </script>
 
@@ -138,6 +146,7 @@ export default {
   background-color: var(--background);
   padding: 44px 82px;
   padding-bottom: 0;
+  height: fit-content;
 }
 //== end ==//
 

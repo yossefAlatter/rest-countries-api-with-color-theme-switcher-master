@@ -35,7 +35,17 @@ export default {
       mousescrollstep: 100,
       cursorborder:"none",
       cursorcolor: "var(--input)", 
-		});
+      background: "var(--elements)",
+      cursorwidth: 7,
+      cursorborderradius: "none",
+      // cursorfixedheight: 200,
+      enablekeyboard: true,
+      autohidemode: false,
+      cursorborderraduis: 0,
+      boxzoom: true,
+
+    });
+    $(":root").getNiceScroll().resize();
     })
   }
 }
@@ -44,5 +54,6 @@ export default {
 <style lang="scss">
 #app{
   background-color: var(--background);
+  height: fit-content;
 }
 </style>
