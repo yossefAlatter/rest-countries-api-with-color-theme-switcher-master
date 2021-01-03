@@ -51,6 +51,11 @@ library.add(faSearch);
 //== start ==//
 //== end ==//
 
+//== import jquery ==//
+//== start ==//
+import $ from 'jquery';
+//== end ==//
+
 export default {
   name: "SearchSec",
 
