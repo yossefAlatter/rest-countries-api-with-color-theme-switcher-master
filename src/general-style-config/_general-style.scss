@@ -1,0 +1,60 @@
+//== all element preset ==//
+//== start ==//
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+//== end ==//
+
+//== declare root variables ==//
+//== start ==//
+:root{
+    //== colors ==//
+    //== start ==//
+    --elements: hsl(0, 0%, 100%);
+    --background: hsl(0, 0%, 98%);
+    --text: hsl(200, 15%, 8%);
+    --input: hsl(0, 0%, 52%);
+    --detailBg: hsl(0, 0%, 100%);
+    //== end ==//
+
+    overflow: hidden;
+    background-color: var(--background);
+
+}
+//== end ==//
+
+//== font family style ==//
+//== start ==//
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+//== end ==//
+
+//== font size preset ==//
+//== start ==//
+#home-page{
+    font-size: 14px;
+}
+#detail-page{
+    font-size: 16px;
+}
+//== end ==//
+
+//== style of error message ==//
+//== start ==//
+.error-message{
+    color: var(--text);
+    padding-top: 150px;
+    font-size: 1.5em;
+}
+//== end ==//
+
+//== style of loader ==//
+//== start ==//
+.loading{
+    color: var(--text);
+    padding-top: 150px;
+}
+//== end ==//

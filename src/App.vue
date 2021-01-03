@@ -1,28 +1,48 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <!-- HeadApp -->
+    <!-- start -->
+    <head-app />
+    <!-- end -->
+
+    <!-- HomeBage -->
+    <!-- start -->
+    <home-page />
+    <!-- end -->
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//== import components ==//
+//== start ==//
+import HeadApp from './components/HeadApp.vue'
+import HomePage from './components/HomePage.vue'
+//== end ==//
+
+//== import jquery ==//
+//== start ==//
+import $ from 'jquery';
+//== end ==//
 
 export default {
+  components: { HeadApp, HomePage },
   name: 'App',
-  components: {
-    HelloWorld
+  mounted(){
+    $('#app').niceScroll({
+      mousescrollstep: 100,
+      cursorborder:"none",
+      cursorcolor: "var(--input)", 
+		});
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#app{
+  height: 100vh;
+  overflow-y: auto;
+  background-color: var(--background);
 }
 </style>
