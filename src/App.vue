@@ -42,5 +42,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+#app{
+  background-color: var(--background);
+}
 </style>
