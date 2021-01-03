@@ -30,7 +30,7 @@ export default {
   components: { HeadApp, HomePage },
   name: 'App',
   mounted(){
-    $('#app').niceScroll({
+    $('html').niceScroll({
       mousescrollstep: 100,
       cursorborder:"none",
       cursorcolor: "var(--input)", 
@@ -40,9 +40,5 @@ export default {
 </script>
 
 <style lang="scss">
-#app{
-  height: 100vh;
-  overflow-y: auto;
-  background-color: var(--background);
-}
+
 </style>
