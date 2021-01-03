@@ -30,11 +30,13 @@ export default {
   components: { HeadApp, HomePage },
   name: 'App',
   mounted(){
-    $('html').niceScroll({
+    setInterval(()=>{
+      $(':root').niceScroll({
       mousescrollstep: 100,
       cursorborder:"none",
       cursorcolor: "var(--input)", 
 		});
+    })
   }
 }
 </script>
